@@ -1,0 +1,7 @@
+server:
+  port: 8088
+
+application:
+  name: springboot-test
+
+pets: [dog,cat]

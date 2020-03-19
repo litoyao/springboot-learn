@@ -5,27 +5,19 @@ public class StringTest {
     public static void main(String[] args) {
 
         String s1=new String("a");
-        String s2=new String("a");
+        String s2=new String("a").intern();
         String s3="a";
 
         System.out.println(s2 == s1);
-        System.out.println(s3 == s1);
+        System.out.println(s3 == s2);
 
-        String a = "job";
-        String aa = "job";
-        String b = "high-job";
-        String c = "j" + "o" + "b";
-
-        System.out.println(a == aa);
-        System.out.println(a == b.substring(5));
-        System.out.println(a == c);
 
         System.out.println("--------------------");
         User u1 = new User("name", "add1");
         User u11 = new User("name", "add1");
 
         System.out.println(u1.getName()==u11.getName());
-        System.out.println(u1==u11);
+
 
     }
 
