@@ -4,4 +4,10 @@ server:
 application:
   name: springboot-test
 
-pets: [dog,cat]
+spring:
+  security:
+    user:
+      name: test
+      password: 123123
+
+#pets: [dog,cat]
